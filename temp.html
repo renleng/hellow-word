@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <base target="_blank" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>{dede:global.cfg_webname/}</title>
+        <meta name="description" content="{dede:global.cfg_description/}"/>
+        <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+        <meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php"/>
+        <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" media="screen" type="text/css"/>
+        <link href="{dede:global.cfg_templets_skin/}/css/index.css" rel="stylesheet" media="screen" type="text/css"/>
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.11.3.js" type="text/javascript"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/hoverTab.js" type="text/javascript"></script>
+        <script src="http://zy.cccfdx.com/dwjs/carousel2.js" type="text/javascript"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/common.js" type="text/javascript"></script>
+        <script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script>
+        <script type="text/javascript">uaredirect("http://4g.zzjhdx.com");</script>
+        <script>
+            (function () {
+                window.onbeforeunload = function () {
+                    alert();
+                }
+                function ff() {
+                    var ie = !-[1, ];
+                    if (ie) {
+                        var n = window.event.screenX - window.screenLeft;
+                        var b = n > document.documentElement.scrollWidth - 20;
+                        if (!(b && window.event.clientY < 0 || window.event.altKey)) {
+                        } else {
+                            return "您好！\n" +
+                                    "郑州军海脑病医院在线专家提醒您，在离开本网站之前，如果您还有疑问，可以选择以下方式进行咨询。\n" +
+                                    "1、拨打400-0092-316免费电话，在线专家为您详细解答癫痫问题。\n" +
+                                    "2、添加在线预约QQ：7940120，申请领取郑州军海脑病医院癫痫专家号（免专家挂号费）方便咨询。\n";
+                        }
+                    } else {
+                        "您好！\n" +
+                                "郑州军海脑病医院在线专家提醒您，在离开本网站之前，如果您还有疑问，可以选择以下方式进行咨询。\n" +
+                                "1、拨打400-0092-316免费电话，在线专家为您详细解答癫痫问题。\n" +
+                                "2、添加在线预约QQ：7940120，申请领取郑州军海脑病医院癫痫专家号（免专家挂号费）方便咨询。\n";
+                    }
+                }
+                ;
+            })();
+        </script>
+        <!--两会图片--><script src="http://zy.cccfdx.com/lianghui/diaoyong.js" type="text/javascript"></script>
+    </head>
+    <body id="index">
+        {dede:include filename="head.htm"/}
+        <!--搜索栏-->
+        <div id="search">
+            <div class="content pageWidth c_jz">
+                <div class="keyword l">
+                    <b>热门搜索：</b>
+                    <a target="_blank" href="{dede:global.cfg_basehost /}/plus/search.php?searchtype=titlekeyword&q=原发性癫痫">原发性癫痫</a>
+                    <a target="_blank" href="{dede:global.cfg_basehost /}/plus/search.php?searchtype=titlekeyword&q=继发性癫痫">继发性癫痫</a>
+                    <a target="_blank" href="{dede:global.cfg_basehost /}/plus/search.php?searchtype=titlekeyword&q=疑难性癫痫">疑难性癫痫</a>
+                    <a target="_blank" href="{dede:global.cfg_basehost /}/plus/search.php?searchtype=titlekeyword&q=顽固性癫痫">顽固性癫痫</a>
+                </div>
+                <div class="ss r">
+                    <form action="{dede:global.cfg_basehost /}/plus/search.php" target="_blank">
+                        <input type="hidden" name="searchtype" value="titlekeyword"/>
+                        <input id="q" name="q" type="text" value="搜索疾病信息" class="input js_autoHide"/><input type="submit" value="搜索" class="button"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end 搜索栏-->
+        <div class="blank20"></div>
+        <!--新闻和信息-->
+        <div id="row01" class="pageWidth c_jz">
+            <!--左侧-->
+            <div class="left l">
+                <!--视频报道-->
+                <div class="shipin h2Style1">
+                    {dede:type typeid='41'}
+                    <h2><a target="_blank" href="[field:typeurl/]" title="[field:typename/]" class="more">+MORE</a></h2> {/dede:type}
+                    <div class="blank10"></div>
+                    {dede:arclist typeid='41' row='1' flag='p' titlelen='200'}
+                    <div class="fengmian">
+                        <img src="[field:litpic/]" alt="[field:title/]" />
+                        <!--<a class="link" target="_blank" href="[field:arcurl/]" title="[field:title/]"></a>-->
+                        <div class="link">
+                            <iframe height=100% width=100% src="http://player.youku.com/embed/XMTQ3NDc3NDI4OA==" frameborder=0 allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    {/dede:arclist}
+                    <div class="blank10"></div>
+                    <div class="list">
+                        {dede:arclist typeid='41' row='2' titlelen='200'}
+                        <a target="_blank" href="[field:arcurl/]">[field:title/]</a> {/dede:arclist}
+                    </div>
+                    <div class="blank10"></div>
+                    {dede:include filename="module/kuaijie.htm"/}
+                    <div class="clear"></div>
+                </div>
+                <!--end 视频报道-->
+            </div>
+            <!--中间-->
+            <div class="center l">
+                <!--新闻报道和公益求助-->
+                <div class="nav newsAndgongyiffff">
+                    {dede:type typeid='2'}<a target="_blank" class="selected js_hoverTab" showObj='#news' name="news">[field:typename/]</a>{/dede:type}
+                    {dede:type typeid='5'}<a target="_blank" name="gongyi" class="js_hoverTab" showObj='#gongyi'>[field:typename/]</a>{/dede:type}
+                </div>
+                <div class="blank20"></div>
+                <!--新闻报道-->
+                <div id="news" style="display: block;">
+                    {dede:arclist typeid='2' titlelen='200' row='1' flag='c' channelid='1' addfield='description'}
+                    <h3 class="zw_title" title="[field:title/]"><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h3>
+                    <p class="zw_text">[field:description function='cn_substr("@me",150)' /]...
+                        <a target="_blank" href="[field:arcurl/]" class="red">详细》</a>
+                    </p>
+                    {/dede:arclist}
+                    <div class="blank10 border-bottom-dashed1"></div>
+                    <div class="blank20"></div>
+                    <ul>
+                        {dede:arclist typeid='2' titlelen='200' limit='1,1' channelid='1' addfield='description'}
+                        <li>
+                            <img src="/templets/junhai/images/i18_1.jpg" style="width: 116px;height: 60px;" />
+                            <div class="right r">
+                                <a class="listTitle" target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+                                <p>[field:description function='cn_substr("@me",58)' /]...<a target="_blank" href="[field:arcurl/]" class="red">详细》</a></p>
+                            </div>
+                        </li>
+                        {/dede:arclist}
+                        {dede:arclist typeid='2' titlelen='200' limit='2,1' channelid='1' addfield='description'}
+                        <li>
+                            <img src="/templets/junhai/images/i18_2.jpg" style="width: 116px;height: 60px;" />
+                            <div class="right r">
+                                <a class="listTitle" target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+                                <p>[field:description function='cn_substr("@me",58)' /]...<a target="_blank" href="[field:arcurl/]" class="red">详细》</a></p>
+                            </div>
+                        </li>
+                        {/dede:arclist}
+                        {dede:arclist typeid='2' titlelen='200' limit='3,1' channelid='1' addfield='description'}
+                        <li>
+                            <img src="/templets/junhai/images/i18_3.jpg" style="width: 116px;height: 60px;" />
+                            <div class="right r">
+                                <a class="listTitle" target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+                                <p>[field:description function='cn_substr("@me",58)' /]...<a target="_blank" href="[field:arcurl/]" class="red">详细》</a></p>
+                            </div>
+                        </li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+                <!--公益求助-->
+                <div id="gongyi">
+                    {dede:arclist typeid='5' titlelen='200' row='1' flag='c' channelid='1' addfield='description'}
+                    <h3 class="zw_title" title="[field:title/]"><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h3>
+                    <p class="zw_text">[field:description function='cn_substr("@me",150)' /]...
+                        <a target="_blank" href="[field:arcurl/]" class="red">详细》</a>
+                    </p>
+                    {/dede:arclist}
+                    <div class="blank10 border-bottom-dashed1"></div>
+                    <div class="blank20"></div>
+                    <ul>
+                        {dede:arclist typeid='5' titlelen='200'  limit='1,1' channelid='1' addfield='description'}
+                        <li>
+                            <img src="/templets/junhai/images/i18_1.jpg" style="width: 116px;height: 60px;" />
+                            <div class="right r">
+                                <a target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+                                <p>[field:description function='cn_substr("@me",58)' /]...<a target="_blank" href="[field:arcurl/]" class="red">详细》</a></p>
+                            </div>
+                        </li>
+                        {/dede:arclist}
+                        {dede:arclist typeid='5' titlelen='200'  limit='2,1' channelid='1' addfield='description'}
+                        <li>
+                            <img src="/templets/junhai/images/i18_2.jpg" style="width: 116px;height: 60px;" />
+                            <div class="right r">
+                                <a target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+                                <p>[field:description function='cn_substr("@me",58)' /]...<a target="_blank" href="[field:arcurl/]" class="red">详细》</a></p>
+                            </div>
+                        </li>
+                        {/dede:arclist}
+                        {dede:arclist typeid='5' titlelen='200'  limit='3,1' channelid='1' addfield='description'}
+                        <li>
+                            <img src="/templets/junhai/images/i18_4.jpg" style="width: 116px;height: 60px;" />
+                            <div class="right r">
+                                <a target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+                                <p>[field:description function='cn_substr("@me",58)' /]...<a target="_blank" href="[field:arcurl/]" class="red">详细》</a></p>
+                            </div>
+                        </li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="right r">
+<!--                <div id="zhenduan">
+                    诊断体系
+                    <h2 class="h2Style1"><span class="title">{dede:type typeid='4'}[field:typename/]{/dede:type}</span></h2>
+                    <div class="blank20"></div>
+                    {dede:arclist typeid='4' row='3' titlelen='50' channelid='1' addfield='description' flag='a' orderway='desc'}
+                    <div class="item clear">
+                        <div class="title [field:global runphp='yes' name=autoindex]if (@me == 1) @me = 'selected';[/field:global]">
+                            [field:title/]
+                        </div>
+                        <div class="content" style="[field:global runphp='yes' name='autoindex']if (@me == 1) @me = 'display:block;';[/field:global]">
+                            <p>[field:image/][field:description function='cn_substr("@me",170)' /]...<a target="_blank" href="/tixi/" class="red">详细》</a></p>
+                            <div class="lx clear r">
+                                <a href="/online.html" target="_blank" class="r">咨询 →</a>
+                                <a target="_blank" href="/tixi/" class="r">详情 →</a>
+                            </div>
+                        </div>
+                    </div>
+                    {/dede:arclist}
+                </div>-->
+<!--医院简介-->
+        {dede:php runphp='yes'}
+        @me = file_get_contents('http://zy.cccfdx.com/junhai/yiyuanjianjie/zzyyjianjie.html');  
+        @me = str_replace("#yyjjlink","/yinxiang/",@me);
+        {/dede:php}
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="blank40"></div>
+        <div class="blank20"></div>
+        <!--主体第二行容器-->
+        <div id="row2" class="pageWidth c_jz">
+            <div class="left l">
+                <!--侧栏导航-->
+                <div class="sidebarNav">
+                    <ul>
+                        {dede:channelartlist row='4' typeid='10,11,13'}
+                        <li class="border-bottom-solid1" style="{dede:global name=itemindex runphp='yes'}if (@me == 3)@me = 'border:none';else @me='';{/dede:global}">
+                            <h3><a target="_blank" href="{dede:field.typeurl/}">{dede:field name='typename'/}</a></h3>
+                            {dede:channel type='son'}                            
+                            <a target="_blank" href="[field:typelink/]" style="[field:global runphp='yes' name='autoindex']if((@me+1)%3==0){@me = 'border:none';}else{@me='0';}[/field:global]">[field:typename/]</a>
+                            {/dede:channel}
+                        </li>
+                        {/dede:channelartlist}
+                    </ul>
+                    <div class="blank20"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="right r">
+                <!--扁平导航-->
+                <div class="bpNav">
+                    <div class="col1">
+                        <!--儿童癫痫-->
+                        {dede:type typeid='14'}
+                        <a target="_blank" href="[field:typeurl/]" title="[field:typename/]">{/dede:type}<img
+                                src="{dede:global.cfg_templets_skin/}/images/bp_erdx.jpg"/></a>
+                        <div class="blank5"></div>
+                        <!--青少年癫痫-->
+                        {dede:type typeid='15'}
+                        <a target="_blank" href="[field:typeurl/]" title="[field:typename/]">{/dede:type}<img
+                                src="{dede:global.cfg_templets_skin/}/images/bp_qsndx.jpg"/></a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col2">
+                        <!--女性癫痫-->
+                        {dede:type typeid='17'}
+                        <a target="_blank" href="[field:typeurl/]" title="[field:typename/]">{/dede:type}<img
+                                src="{dede:global.cfg_templets_skin/}/images/bp_nxdx.jpg"/></a>
+                        <div class="blank5"></div>
+                        <a><img src="{dede:global.cfg_templets_skin/}/images/bp_ga.jpg"/></a>
+                        <div class="blank5"></div>
+                        <!--其他癫痫-->
+                        {dede:type typeid='19'}
+                        <a target="_blank" href="[field:typeurl/]" title="[field:typename/]">{/dede:type}<img
+                                src="{dede:global.cfg_templets_skin/}/images/bp_qtdx.jpg"/></a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col3">
+                        <!--成年癫痫-->
+                        {dede:type typeid='16'}
+                        <a target="_blank" href="[field:typeurl/]" title="[field:typename/]">{/dede:type}<img
+                                src="{dede:global.cfg_templets_skin/}/images/bp_cndx.jpg"/></a>
+                        <div class="blank5"></div>
+                        <!--老年癫痫-->
+                        {dede:type typeid='18'}
+                        <a target="_blank" href="[field:typeurl/]" title="[field:typename/]">{/dede:type}<img
+                                src="{dede:global.cfg_templets_skin/}/images/bp_lndx.jpg"/></a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blank40"></div>
+        <div class="pageWidth c_jz">
+            <!--新诊疗技术-->
+        {dede:php runphp='yes'}
+        @me = file_get_contents('http://zy.cccfdx.com/junhai/newzhenliao/newzhenliao.html');  
+        @me = str_replace("#zhiliaoyuanli","/tixi/",@me);
+        {/dede:php}
+        </div> 
+        <div class="blank20"></div>
+        <!--主体第二行容器-->
+        <div id="row3" class="pageWidth c_jz">
+            <div class="tuandui">
+                <div class="title">
+                    <span class="tb"></span>
+                    <span class="f1">癫痫</span><span class="f2">专家团队</span><span class="f3">EPILEPSY EXPERT TEAM</span>
+                    <a target="_blank" href="/online.html" class="more" style="">点击咨询</a>
+                </div>
+                <div class="clear"></div>
+                <div class="content">
+                    <div class="blank20"></div>
+                    {dede:arclist typeid='3' row='4' channelid='17' addfields='xingming,zhicheng,zuozhen,body'}
+                    <div class="item zhuanjia" style="[field:global runphp='yes' name='autoindex']if (@me%4 == 0) {@me = 'margin-right:0px;float:right;';}else{@me='';}[/field:global]">
+                        <div class="navImg" style="background-image: url([field:litpic/])">
+                            <a title="[field:title /]" target="_blank" href="[field:arcurl/]" class="imgLink"></a>
+                            <div class="btn">
+                                <a target="_blank" href="/online.html" class="a1">咨询专家</a>
+                                <a target="_blank" href="/online.html" class="a2">预约挂号</a>
+                            </div>
+                        </div>
+                        <h3>[field:xingming /]<span>[field:zhicheng /]</span></h3>
+                        <div style="padding: 0px 10px;">
+                            <p class="text" style="padding: 0px 10px;">[field:body function='cn_substr(html2text(@me),70)' /]...<a target="_blank" href="[field:arcurl/]" class="red">【详情】</a></p>
+                            <div class="blank20 border-bottom-dashed1"></div>
+                            <div class="blank20"></div>
+                            <p class="tb1">坐诊时间：[field:zuozhen /]</p>
+                            <div class="blank20"></div>
+                        </div>
+                    </div>
+                    {/dede:arclist}
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blank40"></div>
+        <div class="blank20"></div>
+        <!--主体第四行容器-->
+        <div id="row4" class="pageWidth c_jz">
+            <!--癫痫患者百科-->
+            <div class="baike">
+                <div class="title titleStyle3">
+                    <span class="tb"></span>
+                    <span class="f1">癫痫</span><span class="f2">患者百科</span><span class="f3">EPILEPSY ENCYCLOPEDIA</span>
+                    <a target="_blank" href="/online.html" class="r">点击咨询</a>
+                </div>
+                <div class="blank40"></div>
+                <div class="content">
+                    <div class="left l">
+                        <div class="nav baikeNav">
+                            <!--鼠标滑动导航-->
+                            {dede:channel row='6' typeid='13'}
+                            <a target="_blank" aid='[field:ID /]' showObj='.a[field:ID /]'
+                               class="js_hoverTab l [field:global runphp='yes' name=autoindex]if (@me == 0)@me = 'selected';else @me='';[/field:global]">[field:typename/]</a>
+                            {/dede:channel}
+                            <!--end 鼠标滑动导航-->
+                        </div>
+                        <div class="blank20"></div>
+                        <!--栏目文章列表-->
+                        {dede:channelartlist row=6 typeid='13' }
+                        <div class="item a{dede:field name='id'/}" style="{dede:global name=itemindex runphp='yes'}if (@me == 1)@me = 'display:block';else @me='';{/dede:global}">
+                            <!--第一篇带图的文章标题 + 摘要 -->
+                            {dede:arclist titlelen='42' row='1' channelid='1' addfields='body' flag='a'}
+                            [field:image/]
+                            <div class="right r">
+                                <h4><a target="_blank" href="[field:arcurl /]">[field:title /]</a></h4>
+                                <p>
+                                    [field:body function='cn_substr(html2text(@me),350)' /]...
+                                    <a target="_blank" href="[field:arcurl /]" class="red">详细》</a>
+                                </p>
+                                {/dede:arclist}
+                                <div class="blank15 border-bottom-dashed1"></div>
+                                <div class="blank15"></div>
+                                <div class="list">
+                                    <!--类目文章标题列表-->
+                                    {dede:arclist titlelen='42' row='10'}
+                                    <a target="_blank" href="[field:arcurl /]">[field:title /]</a>
+                                    {/dede:arclist}
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        {/dede:channelartlist}
+                        <div class="blank20"></div>
+                    </div>
+                    <!--end left-->
+                    <div class="right r">
+                        <div class="wenda">
+                            <div style="padding:15px;">
+                                <h2>癫痫病专家在线答疑解惑</h2>
+                                <div class="blank20"></div>
+                                {dede:arclist row='6' title='200' channelid='18' addfields='huida'}
+                                <a target="_blank" href="[field:arcurl/]" class="wen">[field:title/]</a>
+                                <a target="_blank" href="[field:arcurl/]" class="da" style="[field:array runphp='yes']if (@me['flag']=='c')@me='display:block';else @me='display:none';[/field:array]">[field:huida/]</a>
+                                {/dede:arclist}                            
+                                <div class="blank20"></div>
+                                <a target="_blank" href="http://pqt.zoosnet.net/LR/Chatpre.aspx?id=PQT75656272&lng=cn" class="wenbnt c_jz t_jz">我有问题问专家<br/><span>Ask the Expert</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank40"></div>
+        <div class="blank20"></div>
+        <!--主体第五行容器-->
+        <div id="row5" class="pageWidth c_jz">
+            <!--癫痫患者案例-->
+            <div class="anli">
+                <div class="title titleStyle3">
+                    <span class="tb"></span>
+                    <span class="f1">癫痫</span><span class="f2">患者案例</span><span class="f3">CASE PATIENTS WITH EPILEPSY</span>
+                    <a target="_blank" href="/online.html" class="r">点击咨询</a>
+                </div>
+                <div class="blank20"></div>
+                <div class="content">
+                    {dede:arclist typeid='6' row='6' infolen='80' titlelen='100' orderby='id' orderway='asc'}
+                    <div class="item l [field:global runphp='yes' name=autoindex]if (@me%4==0||@me==1)@me = 'width520';else @me='width320';[/field:global]">
+                        <a target="_blank" href="[field:arcurl/]" style="background-image: url([field:litpic/]);"></a>
+                        <h2><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h2>
+                        <p class="text">[field:info/]...<span><a target="_blank" href="[field:arcurl/]" class="red">详细》</a></span></p>
+                        <div class="quanwen"><a target="_blank" href="[field:arcurl/]">点击阅读全文</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    {/dede:arclist}
+                    <div class="blank20"></div>
+                    <div class="anli_more">
+                        {dede:type typeid='6'}<a target="_blank" href="[field:typeurl/]">查看更多案例<span>MORE</span></a>{/dede:type}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank40"></div>
+        <div class="blank20"></div>
+        <!--主体第六行容器-->
+        <div id="row6" class="pageWidth c_jz">
+            <style>
+                .yinxiang{
+
+                }
+                .yinxiang .nav{
+                    width:100%;
+                    height:40px;
+                }
+                .yinxiang .nav a{
+                    float:left;
+                    width:154px;
+                    height:40px;
+                    font:24px/40px '微软雅黑';
+                    color:white;
+                    text-align:center;
+                    margin-right:15px;
+                    background:#1195bb;
+                }
+                .yinxiang .selected{
+                    background:url({dede:global.cfg_templets_skin/}/images/tgb2.png) no-repeat center bottom;
+                }
+                .yinxiang .item{
+                    display:none;
+                }
+            </style>
+            <!--癫痫患者案例-->
+            <div class="yinxiang">
+                <div class="title titleStyle3">
+                    <span class="tb"></span>
+                    <span class="f1">印象</span><span class="f2">郑州军海</span><span class="f3">IMPRESSION ZHENGZHOU JUNHAI</span>
+                    <a target="_blank" href="/online.html" class="r">点击咨询</a>
+                </div>
+                <div class="blank20"></div>
+                <div class="content">
+                    <div class="nav">
+                        <a class="js_hoverTab selected" showObj='.yyhj'>医院环境</a>
+                        <a class="js_hoverTab" showObj='.gyhd'>公益活动</a>
+                    </div>
+                    <div class="blank20"></div>
+                    <div class="gyhd item">
+                        <img src="{dede:global.cfg_templets_skin/}/images/gyhd05.jpg" alt="公益活动" />
+                    </div>
+                    <div class="yyhj item" style="display:block;">
+                        <div class="left">
+                            <!--医院简介-->
+                            <a target="_blank" href="/yxjh/" title="医院简介"><img src="{dede:global.cfg_templets_skin/}/images/i24.jpg" alt="医院简介" /></a>
+                        </div>
+                        <div class="center">
+                            <a target="_blank" href="/tixi/" style="margin-bottom: 15px;"><img src="{dede:global.cfg_templets_skin/}/images/i25.jpg" style="margin-bottom: 15px;" /></a>
+                            <a target="_blank" href="/tixi/"><img src="{dede:global.cfg_templets_skin/}/images/i26.jpg"/></a>
+                            <!--诊断体系-->
+                            {dede:type typeid='4'}
+                            <a target="_blank" href="[field:typeurl/]" title="[field:typename/]" style="margin-left:15px;">{/dede:type}<img src="{dede:global.cfg_templets_skin/}/images/i27.jpg" alt="诊断体系" /></a>
+                        </div>
+                        <div class="c2">
+                            <a target="_blank" href="/tixi/"><img src="{dede:global.cfg_templets_skin/}/images/i28.jpg"/></a>
+                        </div>
+                        <div class="right">
+                            <!--专家团队-->
+                            {dede:type typeid='3'}
+                            <a target="_blank" href="[field:typeurl/]" title="[field:typename/]">{/dede:type}<img style="margin-bottom:15px;" src="{dede:global.cfg_templets_skin/}/images/i29.jpg" alt="专家团队" /></a>
+                            <a target="_blank" href="/zhuanjia/"><img src="{dede:global.cfg_templets_skin/}/images/i30.jpg"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank20"></div>
+        {dede:include filename="footer.htm"/}
+        <script>
+            /**
+             
+             * 随首页启动的项目
+             
+             * @param {type} param
+             
+             */
+            $(document).ready(function () {
+                zhenduan();
+                newsAndgongyi();
+                baike();
+            });
+        </script>
+        <script src="http://huiji.gdnfyy.com/diyswt/ds.js"></script>
+    </body>
+</html>
